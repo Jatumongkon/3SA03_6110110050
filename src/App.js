@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import WordCard from './WordCard';
 
-const word = "aabbccddeeffgg";//aabbccddeeffgghhiijjkkllmmnn
+const word = "aabbccddeeffgg";//aabbccddeeffgghhiijjkkllmmnn   
 function App() {
   return (
     <div>
