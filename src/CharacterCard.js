@@ -17,6 +17,8 @@ useEffect(()=>{
         setActive(false);
         attempRef.current = props.attempt
     }
+
+  
 })
 const className =`card ${active ? 'activeCard': ''}`
 
