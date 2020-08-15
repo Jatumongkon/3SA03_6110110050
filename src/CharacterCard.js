@@ -1,7 +1,7 @@
 import React,{ useState, useEffect, useRef} from 'react'
 import { act } from 'react-dom/test-utils';
 
-export default function ChraracterCard(props){
+export default function CharacterCard(props){
 const [active, setActive]= useState(false);
 const attempRef = useRef(props.attempt);
 

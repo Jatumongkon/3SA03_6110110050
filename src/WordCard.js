@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ChraracterCard from './ChraracterCard';
+import CharacterCard from './CharacterCard';
 import { words, set, attempt } from 'lodash';
 import _ from 'lodash';
 const prepareStateFromWord = given_word => {
@@ -40,7 +40,7 @@ export default function WordCard(props){
     return (
  <div>
 { state.chars.map((c, i) => 
-    <ChraracterCard value={c} key={i} activationHandler={activationHandler}attempt={state.attempt} />) }
+    <CharacterCard value={c} key={i} activationHandler={activationHandler}attempt={state.attempt} />) }
  </div>
  );
 }
