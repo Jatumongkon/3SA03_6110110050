@@ -20,7 +20,7 @@ export default function WordCard(props){
     
     const [state, setState] = useState(prepareStateFromWord(props.value))
     const activationHandler = c => { 
-        console.log(`${c} has been activated.`) 
+        //console.log(`${c} has been activated.`) 
         if(lastword == ''){
             lastword = c
             //console.log(`${lastword} ${count}`)  
@@ -34,11 +34,12 @@ export default function WordCard(props){
                 document.location.reload()
             }
         }
-        console.log(`${lastword} ${count}`)
+        //console.log(`"Count ="${count}`)
         let guess = state.guess + c
         setState({...state, guess})
 
         if(guess.length == state.word.length){
+            alert('You win!');
             console.log("You win!")
             setState({...state, completed: true})
             /*
